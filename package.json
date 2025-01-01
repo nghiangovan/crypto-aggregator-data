@@ -1,0 +1,22 @@
+{
+  "name": "crypto-aggregator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "postinstall": "git submodule update --init --recursive && yarn install-submodules",
+    "install-submodules": "yarn install-lunarcrush && yarn install-certik",
+    "install-lunarcrush": "cd lunarcrush && yarn install",
+    "install-certik": "cd skynet_certik && yarn install"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongodb": "^5.0.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

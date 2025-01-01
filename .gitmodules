@@ -1,0 +1,6 @@
+[submodule "lunarcrush"]
+	path = lunarcrush
+	url = git@github.com:nghiangovan/lunarcrush.git
+[submodule "skynet_certik"]
+	path = skynet_certik
+	url = git@github.com:nghiangovan/skynet_certik.git
