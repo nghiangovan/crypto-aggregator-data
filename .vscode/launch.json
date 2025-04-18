@@ -4,14 +4,15 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug Current File",
+      "name": "Debug index.js (Yarn)",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${file}",
+      "program": "${workspaceFolder}/index.js",
+      "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "restart": true,
-      "runtimeExecutable": "node",
-      "runtimeArgs": ["--preserve-symlinks"]
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["debug"]
     }
   ]
 }

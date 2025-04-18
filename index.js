@@ -22,7 +22,6 @@ const certikConfig = {
 const lunarConfig = {
   mongoUrl: MONGO_URL,
   collectionName: 'lunarcrush_data',
-  apiKey: process.env.LUNARCRUSH_API_KEY,
 };
 
 // Validate required environment variables
@@ -31,10 +30,7 @@ if (!certikConfig.mongoUrl || !certikConfig.securityScoresCollection || !certikC
   process.exit(1);
 }
 
-if (!lunarConfig.apiKey) {
-  console.error('Missing required LunarCrush API key. Please check your .env file.');
-  process.exit(1);
-}
+
 
 async function handleCertikDailyMarketData() {
   try {

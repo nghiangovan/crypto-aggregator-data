@@ -84,7 +84,7 @@ crypto-aggregator/
 MONGO_URL=mongodb://localhost:27017/crypto_db
 
 # LunarCrush Configuration
-LUNARCRUSH_API_KEY=your_api_key
+
 
 # Certik Configuration
 SECURITY_SCORES_COLLECTION=security_scores
